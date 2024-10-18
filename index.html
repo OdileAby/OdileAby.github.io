@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <h1> WELCOME TO MY PORTFOLIO!!</h1>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
+</head>
+<body>
+
+  <header>
+    <div class="topnav" id="myTopnav">
+
+
+      <a href="#contact">Contact</a>
+        <a href="#Volunteer">Volunteer</a>
+        <a href = "#work"> Experience</a>
+        <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+        <a href="#home" class="active">Home</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+         <div class="myLogo"><img src = "ODILELOGO.PNG" alt = "logo"></div>
+    </div>
+
+    </header>
+<div class="bg-image"></div>
+
+<div class="bg-text">
+
+  <h1 style="font-size:50px">Hi! I'm  Odile</h1>
+</div>
+<section id = "about">
+  <div class  = "about">
+
+<h2 class="slide-in"><div class = "h2headings">About Me</div></h2>
+      <div class = "sub-container">
+      <div class = "main_container">
+<p class="slide-in">Hi Friends!<br>
+    <br>
+    Welcome to my personal website. I'm excited to share about myself here...
+    I currently live in Bellevue, Washington, USA but all my family lives in Rwanda, Africa.
+    You can read some of the cool facts about my beautiful country Rwanda <a href="https://www.butterfield.com/get-inspired/facts-about-rwanda">here</a>.</p>
+   <p> About my education...<br></p>
+      I graduated with a bachelor's degree in Computer Science and a minor in Business
+          Administration from Seattle University in June 2024.As an aspiring software engineer
+       and product manager, I'm passionate about leveraging technology to solve real-world
+       challenges.
+    I find great satisfaction in combining coding with product development,
+       crafting solutions that enhance user experiences and contribute to business growth.<br>
+
+      <p> About my hobbies...<br>
+   <ul>
+      <li>Travelling the world</li>
+      <li>Reading non-fiction books</li>
+      <li>Playing piano</li>
+      <li>Hanging out with friends</li>
+ </ul>
+           </div>
+
+       <div class = "aboutImage">
+           <img src = "IMG_4258.JPG" alt = "grad1 pic">
+
+ </div>
+</div>
+  </div>
+
+
+</section>
+  <section id="projects">
+      <br>
+      <br>
+      <br>
+      <br>
+   <div class = "h2headings"><h2>My projects</h2></div>
+  <div class = projects>
+   <div class = "project-class">
+      <div><h2>Akapp Web Application</h2>
+        <div class = "logo_images">
+     <img src = "akplogo.png" alt = "akapp logo"></div>
+        <p>With a team of 3 we invented a web application</br>
+            designed to help people report corruption cases.</br>
+            With this app, you confidentially upload copies of<br>
+            evidence to the app.The department in charge follows
+            up with the case and takes appropriate action.
+            You can read more about it <a href="https://africa.cgtn.com/three-students-in-rwanda-develop-anti-corruption-app/">here</a>.</p>
+    </div>
+</div>
+ <div class = "project-class">
+      <div><h2>Vitality Dashboard</h2>
+        <div class = "logo_images">
+            <img src = "vitality.png" alt = "vitality"></div>
+       <p>This project is sponsored by the Archdiocese<br>
+           of Seattle. It is a digital platform tailored for easy data input
+           for their bi-annual data collection. It streamlines data submission process
+           and automates subsequent steps for data analysis.</p>
+      </div>
+ </div >
+      <div class = "project-class">
+   <div><h2>Roots & Spice</h2>
+       <div class = "logo_images">
+      <img src = "recipe.png" alt = "recipe image"></div>
+       <p> Developed a dynamic and visually engaging website <br>
+           that highlights a variety of cultural cuisines from <br>
+           around the world.The project emphasizes the diversity<br>
+           of global culinary traditions while maintaining a clean <br>
+           and accessible design for a broad audience.</p>
+       </div>
+      </div >
+</div>
+      </section>
+
+  <section id = "work">
+      <div class = work-experience>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+      <div class = "h2headings"><h2>Work Experience</h2></div>
+          <br>
+          <br>
+          <br>
+      <div class = "experience">
+       <div class = "work1">
+           <h2> IT Intern</h2>
+           <p>The Boeing Company, Everett WA</p>
+            </div>
+      <div class = "fulltime1">
+           <p> Full Time</p>
+           <p>Jun 2023 - Aug 2023</p>
+
+       </div>
+          </div>
+      <div class="line"></div>
+ <br>
+      <br>
+      <br>
+      <br>
+           <div class = "experience">
+       <div class = "work1">
+           <h2> Software Developer Intern</h2>
+           <p>Archdiocese of Seattle, Seattle WA</p>
+            </div>
+      <div class = "fulltime2">
+           <p> Full Time</p>
+           <p>Sept 2023 - Jun 2024</p>
+
+       </div>
+          </div>
+      <div class="line"></div>
+ <br>
+      <br>
+      <br>
+      <br>
+           <div class = "experience">
+       <div class = "work1">
+           <h2> Student Ambassador</h2>
+           <p>Seattle University, Seattle WA</p>
+            </div>
+      <div class = "fulltime3">
+           <p> Part Time</p>
+           <p>April 2021 - May 2023</p>
+
+       </div>
+          </div>
+      <div class="line"></div>
+ <br>
+      <br>
+      <br>
+      <br>
+           <div class = "experience">
+       <div class = "work1">
+           <h2> Transportation Assistant</h2>
+           <p>Seattle University, Seattle WA</p>
+            </div>
+      <div class = "fulltime4">
+           <p> Part Time</p>
+           <p>April 2023 - Aug 2023</p>
+
+       </div>
+          </div>
+      <div class="line"></div>
+     <br>
+      <br>
+       <br>
+      <br>
+
+   <div class="alltechnology">
+       <br>
+      <br>
+       <br>
+      <br>
+       <h2> Technology Stack</h2>
+         <br>
+         <br>
+
+          <div class="technology">
+             <div class = "myhover"><img src="img_4.png" alt = "html"></div><div class="hide">Html5</div>
+              <div class = "myhover"><img src="img_5.png" alt = "css"></div><div class="hide">CSS3</div>
+               <div class = "myhover"><img src="img_6.png" alt = "js"></div><div class="hide">JavaScript</div>
+               <div class = "myhover"><img src = "img_3.png" alt = "react"></div><div class="hide">React JS</div>
+               <div class = "myhover"><img src = "img_2.png" alt = bootstrap></div><div class="hide">Bootstrap</div>
+               <br>
+         <br>
+              <div class = "other-tech">
+              <img src="img_7.png" alt = "sql">
+              <img src ="img_8.png" alt = "mysql">
+                  </div>
+
+          </div>
+        <br>
+         <br>
+          <h2>Tools</h2>
+        <br>
+         <br>
+          <div class="tools">
+              <div class = "myhover"><img src="img_9.png" alt = "html"></div><div class="hide">Visual Studio Code</div>
+              <div class = "myhover"><img src="img_12.png" alt = "github"></div><div class="hide">Github</div>
+              <div class = "myhover"><img src="img_13.png" alt = "slack"></div><div class="hide">Slack</div>
+              <div class = "myhover"><img src="img_17.png" alt = "teams"></div><div class="hide">Teams</div>
+              </div>
+          </div>
+          </div>
+  </section>
+<section id = "Volunteer">
+    <br>
+    <br>
+    <br>
+  <div class = "h2headings"><h2>Volunteer Program</h2></div>
+<div class = "newvolunteer">
+  <div class = "volunteer">
+
+   <div class = "cyco">
+       <div class = "cycoImage"><img src = "cyco.png" alt = "cyco logo" ></div>
+       <p>CYCO</p>
+       I'm part of an amazing non-profit organization Child and youth Care Organization(CYCO).<br>
+       <p>CYCO is a voice for vulnerable children in the south Kivu region.
+       <p>Our mission is to improve kid's lives through emergency aid in natural disasters, wars and other conflicts .<br>
+       <p>Funds raised give children access to an education, through providing school fees, learning equipments, and uniforms<br>
+       <p>If you want to read more feel free to do so <a href="https://www.infocusministries.org/child-and-youth-care-organization">here</a>.</p>
+       <br>
+       <br>
+       <br>
+   </div >
+  </div>
+
+<div class = "others">
+     <p>Other organizations I'm part of are:</p>
+      <ul>
+          <li> National Society For Black Engineers(NSBE)</li>
+          <li> AnitaB.org</li>
+          <li> Society for Women Engineers(SWE)</li>
+          <li> Grace Hoppers Conference(GHC)</li>
+      </ul>
+    </div>
+</div>
+  <br>
+  <br>
+  <br>
+    </section>
+  <section id="contact">
+ <div class = "form-class"><h1>Contact Information</h1></div>
+  <div class = "contact">
+   <div class = "thanks"><div class = "stay">Thank you for staying a little longer...</div><br>
+       <br>
+       <br>
+       <p><h3>You wanna be friends?</h3><br>
+       <h3>Feel free to contact me through the form on the right...</h3>
+</div>
+
+
+<div class="container">
+   <form action="https://formsubmit.co/abimanaodile10@gmail.com" method="POST">
+       <input type="hidden" name="_captcha" value="false">
+    <label for="fname">Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="your email.." required></br>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Send Email">
+  </form>
+    </div>
+</div>
+
+
+</section>
+<div class = "social">
+    <p>You can also follow me on my social media pages.</p>
+
+       <div class ="social-media">
+           <div class = "instagram"> <a href="https://www.instagram.com/odile_abimana/?hl=en"><img src = "instagram.png" alt = instagram icon></a></div>
+           <div class = "linkedin">  <a href="https://www.linkedin.com/in/abimana-odile-450506158/"><img src = "linkedin.png" alt = linkedin icon></a></div>
+          <div class = "twitter"> <a href="https://x.com/odile_abimana"><img src = "twitter.jpg" alt = twitter icon></a></div>
+
+
+       </div>
+  </div>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+  // Get the button
+  let mybutton = document.getElementById("myBtn");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+
+
+    <footer class="footer">
+
+        <p>&copy; 2024 Odile's Website. All rights reserved.</p>
+        <p>Washington USA</p>
+    </footer>
+
+</body>
+</html>
