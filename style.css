@@ -257,13 +257,47 @@ text-align:center;
 .active, .dot:hover {
   background-color: #717171;
 }
-.projects{
-  padding:3%;
-  display: flex;
 
-  justify-content: space-around;
+/* General styling */
+  .projects {
+    display: flex;
+    flex-wrap: wrap; /* Wraps items to new line when necessary */
+    gap: 20px; /* Adds space between project items */
+  }
 
-}
+  .project-class {
+    flex: 1 1 300px; /* Responsive width, min 300px */
+    padding: 10px;
+    border: 1px solid #ddd; /* Optional border for clarity */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional shadow */
+  }
+
+  .logo_images img {
+    max-width: 100%; /* Ensures image scales with container */
+    height: auto;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) { /* Tablets */
+    .projects {
+      flex-direction: column; /* Stacks items vertically */
+    }
+  }
+
+  @media (max-width: 480px) { /* Smaller screens */
+    .projects {
+      padding: 10px;
+    }
+
+    .project-class {
+      padding: 5px;
+      font-size: 0.9rem; /* Reduces text size */
+    }
+
+    .logo_images img {
+      width: 80%; /* Scales down images */
+    }
+  }
 .projects p{
   font-style: italic;
 }
