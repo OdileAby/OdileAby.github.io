@@ -1,6 +1,6 @@
 body, html {
     height: 100%;
-    margin: 0;
+    margin: auto;
     font-family: Arial, Helvetica, sans-serif;
     width:100%;
   }
@@ -25,7 +25,8 @@ text-align:center;
     box-sizing: border-box;
   }
 .myLogo{
-  width:15%;
+  width:20%;
+  height:30%;
 }
   .bg-image {
     /* The image used */
@@ -44,60 +45,141 @@ text-align:center;
     background-size: cover;
   }
 
-  /* Position text in the middle of the page/image */
-  .bg-text {
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+ /* The background image and its styling */
+.bg-image {
+    background-image: url("odile.jpg");
+    filter: blur(8px);
+    -webkit-filter: blur(0.6px);
+    height: 100vh; /* Full height of the viewport */
+    width: 100%; /* Ensure full width */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; /* This allows absolute positioning of text */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Flexbox centering */
+}
+
+/* The text container */
+.bg-text {
+    background-color: rgba(0, 0, 0, 0.4); /* Black with transparency */
     color: white;
     font-weight: bold;
     border: 3px solid #f1f1f1;
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 80%;
     padding: 20px;
     text-align: center;
+    box-sizing: border-box;
+    width: 80%;
+    max-width: 600px; /* Limit the width on larger screens */
+    z-index: 2; /* Ensure it's above the image */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) { /* For tablets */
+    .bg-text h1 {
+        font-size: 36px; /* Smaller font size */
+    }
+    .bg-text {
+        padding: 15px;
+        width: 85%; /* Slightly larger width for tablet */
+    }
+     .myLogo img {
+    height: 30%; /* Increase logo size on mobile */
   }
+}
+
+@media (max-width: 480px) { /* For mobile devices */
+    .bg-text h1 {
+        font-size: 28px; /* Smaller font size */
+    }
+    .bg-text {
+        padding: 10px;
+        width: 90%; /* Slightly larger width to fit mobile */
+    }
+}
+
+
+
 
     /* nav bar*/
   /* Add a black background color to the top navigation */
+/* General styling for top navigation bar */
+/* General styling for top navigation bar */
+/* Basic styling for topnav */
 .topnav {
-    background-color: black;
-    overflow: hidden;
-    padding : 30px;
+  display: flex;
+  justify-content: space-between; /* To place items on the left and right */
+  align-items: center; /* Vertically center the items */
+  background-color: black; /* Adjust according to your design */
+  padding: 10px;
+  position: relative;
+}
 
+/* Logo styling */
+.myLogo img {
+  height: 80px; /* Adjust the size of the logo */
+  max-width: 100%; /* Make sure the logo scales well */
+}
+.topnav a.active {
+  background-color: green; /* Green background for active link */
+  color: white; /* Text color stays white */
+}
+/* Menu items styling */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-align: center;
+}
 
-  }
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
 
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    float: right;
-    display: block;
-    color: #f2f2f2;
+/* Menu items container */
+.topnav .menu-items {
+  display: flex; /* Align menu items horizontally */
+  justify-content: flex-end; /* Align items to the right */
+  flex-grow: 1; /* Take up remaining space */
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 768px) {
+  .topnav {
+    flex-direction: column; /* Stack items vertically on small screens */
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
   }
 
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
+  .topnav a {
+    display: block;
+    padding: 12px;
   }
 
-  /* Add an active class to highlight the current page */
-  .topnav a.active {
-    background-color: #04AA6D;
-    color: white;
+  /* Center the logo when the menu is stacked */
+  .myLogo {
+    margin: 20px 0; /* Add space around the logo */
+  }
+/* Active button styling (green) */
+
+  /* For responsive menu */
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
   }
 
-  /* Hide the link that should open and close the topnav on small screens */
-  .topnav .icon {
-    display: none;
+  /* Adjust the logo if needed to stay centered */
+  .topnav.responsive .myLogo {
+    margin-top: 20px;
+    text-align: center;
   }
+}
+
+
+
 
   input[type=text], select, textarea {
     width: 100%; /* Full width */
@@ -257,7 +339,6 @@ text-align:center;
 .active, .dot:hover {
   background-color: #717171;
 }
-
 /* General styling */
   .projects {
     display: flex;
@@ -298,6 +379,7 @@ text-align:center;
       width: 80%; /* Scales down images */
     }
   }
+
 .projects p{
   font-style: italic;
 }
@@ -334,48 +416,89 @@ img {
   text-align: center;
   font-size:20px;
 }
-.social-media{
-   display: flex;
-   margin-left: 40%;
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between icons */
+  margin: 0 auto;
+  padding: 10px;
 }
 
-.twitter {
-   width: 12%;
+/* Ensure icons fit well within their divs */
+.social-media img {
+  width: 45px; /* Sets a uniform width */
+  height: 40px; /* Sets a uniform height */
+  object-fit: cover; /* Ensures images fit within the specified dimensions */
+}
+.linkedin{
+  height:13px;
 }
 
-.instagram {
-  width: 12%;
+/* Responsive adjustments */
+@media (max-width: 768px) { /* Tablets */
+  .social-media {
+    gap: 15px;
+  }
+  .social-media img {
+    width: 40px; /* Slightly smaller icon size */
+  }
 }
 
-.linkedin {
-  width: 7%;
-  padding-top:1%;
+@media (max-width: 480px) { /* Mobile devices */
+  .social-media {
+    flex-direction: column; /* Stack icons vertically */
+    align-items: center; /* Center icons */
+  }
+  .social-media img {
+    width: 30px; /* Smaller icon size for mobile */
+  }
 }
+
 
 .cycoImages {
    width:70%;
    position: relative;
    margin-right:5%;
 }
-.cycoImage {
-    width:40%;
-    height:50%;
-    position:relative;
-    margin-left:5%;
-}
-.cyco{
+.cyco {
   font-family: Geneva, Verdana, sans-serif;
   color: #228B22;
-  margin-left:10%;
-  margin-right: 10%;
-  border:1%;
-  border-radius: 1%;
-  font-size:2.7 vw;
-  width: 500%;
+  margin: 0 auto;
+  max-width: 90%; /* Ensures it doesn’t exceed the screen width */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1.2rem; /* Initial font size */
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-  padding:3%;
-  padding-bottom:10%;
+  padding: 3%;
 }
+
+.cycoImage img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Centers the image */
+}
+
+.cyco p {
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) { /* For tablets */
+  .cyco {
+    font-size: 1rem; /* Slightly reduce font size */
+    padding: 5%;
+  }
+}
+
+@media (max-width: 480px) { /* For mobile devices */
+  .cyco {
+    font-size: 0.9rem; /* Further reduce font size */
+    padding: 5%;
+  }
+}
+
 
 .main_container{
   border:5px solid;
@@ -388,12 +511,10 @@ img {
 
 .sub-container{
   display:flex;
-
-
 }
 
 .others {
-  font-size: 1.5vw;
+  font-size: 1.9vw;
   padding:3%;
   line-height:1.8;
   margin-left:20%;
@@ -412,17 +533,42 @@ img {
   font-size:1 vw;
 }
 .thanks {
-  margin-left: 300px;
-  margin-top:40px;
+  margin: 0 auto;
+  margin-top: 40px;
+  text-align: center; /* Centers the text */
+  max-width: 90%; /* Prevents it from getting too wide on large screens */
 }
-.stay{
+
+.stay {
   font-family: "Sofia", sans-serif;
-  font-style:italic;
-  font-size:40px;
+  font-style: italic;
+  font-size: 2.5rem; /* Set initial font size */
 }
-.thanks h3{
-  margin-left:70px;
+
+.thanks h3 {
+  margin: 10px 0;
+  font-size: 1.5rem; /* Set initial font size */
 }
+
+/* Responsive adjustments */
+@media (max-width: 768px) { /* For tablets */
+  .stay {
+    font-size: 2rem; /* Reduce font size for smaller screens */
+  }
+  .thanks h3 {
+    font-size: 1.2rem; /* Slightly reduce font size */
+  }
+}
+
+@media (max-width: 480px) { /* For mobile devices */
+  .stay {
+    font-size: 1.5rem; /* Further reduce font size for mobile */
+  }
+  .thanks h3 {
+    font-size: 1rem; /* Further reduce font size */
+  }
+}
+
 .form-class{
   text-align: center;
   font-size:20px;
@@ -457,15 +603,41 @@ img {
 .work-experience{
   padding:2%;
 }
-.technology{
-  display:flex;
+.technology {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* Align items to the left */
+  gap: 10px; /* Add a small gap between items */
+}
 
+.technology .myhover {
+  text-align: center; /* Center text below images */
+  margin: 0 10px; /* Reduce margin between items */
 }
+
 .technology img {
-  width:100px;
-  height: 100px;
-  margin:0 auto;
+  width: 80px; /* Adjust the size of the images to make them closer */
+  height: 80px;
+  margin-bottom: 5px; /* Add space between the image and text */
 }
+
+/* Styling for labels under images */
+.technology .hide {
+  font-size: 12px; /* Adjust font size */
+  color: #333; /* Color for labels */
+}
+
+/* Adjust styling for "other-tech" section */
+.other-tech {
+  display: flex;
+  gap: 10px; /* Add space between the images in other-tech */
+}
+
+.other-tech img {
+  width: 80px; /* Adjust size of images */
+  height: 80px;
+}
+
 .hide {
   display: none;
 }
