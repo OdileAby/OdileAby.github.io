@@ -12,27 +12,41 @@
 
   <header>
     <div class="topnav" id="myTopnav">
-
-
-      <a href="#contact">Contact</a>
-        <a href="#Volunteer">Volunteer</a>
-        <a href = "#work"> Experience</a>
-        <a href="#projects">Projects</a>
-      <a href="#about">About</a>
-        <a href="#home" class="active">Home</a>
+<div class="myLogo">
+    <img src = "ODILELOGO.PNG" alt = "logo">
+</div>
+        <div class = "menu-items">
+  <a href="#home" class="active">Home</a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+           <a href="#about">About</a>
+           <a href="#projects">Projects</a>
+           <a href = "#work"> Experience</a>
+           <a href="#Volunteer">Volunteer</a>
+            <a href="#contact">Contact</a>
         <i class="fa fa-bars"></i>
       </a>
-         <div class="myLogo"><img src = "ODILELOGO.PNG" alt = "logo"></div>
+            </div>
+
+        <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+</script>
+
     </div>
 
     </header>
-<div class="bg-image"></div>
-
-<div class="bg-text">
-
-  <h1 style="font-size:50px">Hi! I'm  Odile</h1>
+<div class="bg-image">
+  <div class="bg-text">
+    <h1>Hi! I'm Odile</h1>
+  </div>
 </div>
+
 <section id = "about">
   <div class  = "about">
 
@@ -96,7 +110,7 @@
             <img src = "vitality.png" alt = "vitality"></div>
        <p>This project is sponsored by the Archdiocese<br>
            of Seattle. It is a digital platform tailored for easy data input
-           for their bi-annual data collection. It streamlines the data submission process
+           for their bi-annual data collection. It streamlines data submission process
            and automates subsequent steps for data analysis.</p>
       </div>
  </div >
@@ -106,7 +120,7 @@
       <img src = "recipe.png" alt = "recipe image"></div>
        <p> Developed a dynamic and visually engaging website <br>
            that highlights a variety of cultural cuisines from <br>
-           around the world. The project emphasizes the diversity<br>
+           around the world.The project emphasizes the diversity<br>
            of global culinary traditions while maintaining a clean <br>
            and accessible design for a broad audience.</p>
        </div>
@@ -189,7 +203,7 @@
       <br>
        <br>
       <br>
-
+      </div>
    <div class="alltechnology">
        <br>
       <br>
@@ -271,7 +285,7 @@
        <br>
        <br>
        <p><h3>You wanna be friends?</h3><br>
-       <h3>Feel free to contact me through the form on the right...</h3>
+       <h3>Feel free to contact me through the form.</h3>
 </div>
 
 
@@ -299,7 +313,7 @@
 
        <div class ="social-media">
            <div class = "instagram"> <a href="https://www.instagram.com/odile_abimana/?hl=en"><img src = "instagram.png" alt = instagram icon></a></div>
-           <div class = "linkedin">  <a href="https://www.linkedin.com/in/abimana-odile-450506158/"><img src = "linkedin.png" alt = linkedin icon></a></div>
+           <div class = "linkedin">  <a href="https://www.linkedin.com/in/abimana-odile-450506158/"><img src = "img.png" alt = linkedin icon></a></div>
           <div class = "twitter"> <a href="https://x.com/odile_abimana"><img src = "twitter.jpg" alt = twitter icon></a></div>
 
 
