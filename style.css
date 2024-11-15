@@ -28,26 +28,11 @@ text-align:center;
   width:20%;
   height:30%;
 }
-  .bg-image {
-    /* The image used */
-    background-image: url("odile.jpg");
 
-    /* Add the blur effect */
-    filter: blur(8px);
-    -webkit-filter: blur(2px);
-
-    /* Full height */
-    height: 100%;
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
 
  /* The background image and its styling */
 .bg-image {
-    background-image: url("odile.jpg");
+    background-image: url("IMG_4258.jpg");
     filter: blur(8px);
     -webkit-filter: blur(0.6px);
     height: 100vh; /* Full height of the viewport */
@@ -63,7 +48,7 @@ text-align:center;
 
 /* The text container */
 .bg-text {
-    background-color: rgba(0, 0, 0, 0.4); /* Black with transparency */
+    background-color: rgba(0, 0, 0, 0.2); /* Black with transparency */
     color: white;
     font-weight: bold;
     border: 3px solid #f1f1f1;
@@ -100,13 +85,6 @@ text-align:center;
 }
 
 
-
-
-    /* nav bar*/
-  /* Add a black background color to the top navigation */
-/* General styling for top navigation bar */
-/* General styling for top navigation bar */
-/* Basic styling for topnav */
 .topnav {
   display: flex;
   justify-content: space-between; /* To place items on the left and right */
@@ -177,8 +155,6 @@ text-align:center;
     text-align: center;
   }
 }
-
-
 
 
   input[type=text], select, textarea {
